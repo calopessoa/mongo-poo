@@ -13,37 +13,37 @@ A RESTful API with Mongoose DB creation through MSC (Model, Service and Controll
 
 Node, Express, Typescript, Mongoose, MongoDB, Zod, POO, SOLID, Mocha, Chai e Sinon.
 
-## Rodando aplicação
+## Running this application
 <details> 
   <summary>
-    <strong>🐳 Rodando o servidor no Docker</strong>
+    <strong>🐳 Running on docker</strong>
   </summary>
 
-Clone o projeto
+Clone this project
 
 ```bash
   git clone git@github.com:calopessoa/mongo-poo.git
 ```
 
-Entre no diretório do projeto
+Now into the project's folder
 
 ```bash
   cd mongo-poo
 ```
 
-Instale as dependências
+Install dependencies
 
 ```bash
   npm install
 ```
 
-Suba o container Docker
+Now up the container...
 
 ```bash
   docker-compose up -d
 ```
 
-Inicie o servidor dentro do container
+Boot up the server!
 
 ```bash
    npm run dev
@@ -52,29 +52,29 @@ Inicie o servidor dentro do container
 
 <details> 
   <summary>
-    <strong>✅ Rodando localmente</strong>
+    <strong>✅ Running locally</strong>
   </summary>
   
-  Caso não tenha o MongoDB instalado em sua máquina e deseje usar o Docker, é só seguir os passos a seguir:
-
-  Baixe a imagem do MongoDB:
+  In case you don't have MongoDB installed or just want to use Docker, just follow this guide:
+  
+  Dowload MongoDB image:
   
   ```bash
     docker pull mongo
   ```
   
-  Crie o contêiner do MongoDB:
+  Create its container:
   
    ```bash
-    docker run --name <nome-do-container> -p 27017:27017 -d mongo
+    docker run --name <container-name> -p 27017:27017 -d mongo
    ```
    
-  Confira se o contêiner está rodando:
+  Check up if the container is running:
   
    ```bash
     docker container ls
    ```
-  Execute o servidor localmente:
+  Now run the server:
     
    ```bash
     npm run dev
@@ -82,9 +82,9 @@ Inicie o servidor dentro do container
  
  </details>
  
- ## Rodando os testes
+ ## Running the tests
 
-Para rodar os testes, execute o seguinte comando:
+execute the following command:
 
 ```bash
   npm run test:dev
